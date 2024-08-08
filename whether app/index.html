@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6d37effa6c.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+ 
+ <section id="main">
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="simg1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="simg2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="simg3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="simg4.jpg" alt=""></div>
+      
+      
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="search">
+        <input type="text" id="search" placeholder="Find your location..." autocomplete="off">
+        <button class="btn btn-primary" onclick="fun()">Search</button>
+      </div>
+      <div class="card mt-5 shadow">
+        <div class="card-body">
+          <div class="day d-flex justify-content-between">
+            <span id="day">Monday</span>
+            <div class="right">
+              <span id="date">17</span>
+              <span id="month">July</span>
+            </div>
+          </div>
+          <h5 class="title mt-4 text-center" id="city">Rajkot</h5>
+          <p id="weather">Clear</p>
+          <div class="temp">
+            <h1 id="_temp">23°C</h1>
+            <img src="clear.png" alt="" id="wicon">
+          </div>
+          <div class="bottom d-flex justify-content-between mt-4 ">
+            <div class="left d-flex align-middle">
+              <i class="ri-water-percent-fill"></i>
+              <div class="d-flex flex-column">
+                <span id="humidity">70%</span>
+                <span>humidity</span>
+              </div>
+            </div>
+            <div class="left d-flex align-middle">
+              <i class="fa-solid fa-wind"></i>
+              <div class="d-flex flex-column">
+                <span id="wind">3.76 km/h</span>
+                <span>wind speed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
